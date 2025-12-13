@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the leadership team at Blue Peak Global Investment Limited">
+    <title>Our Team - Blue Peak Global Investment Limited</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-enhancements.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .team-hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #2c4a7c 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .team-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .team-intro {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: var(--white);
+        }
+        
+        .team-intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .team-section {
+            padding: 4rem 2rem;
+            background: var(--secondary-grey);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .team-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .team-photo {
+            width: 100%;
+            height: 320px;
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #2c4a7c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-photo-placeholder {
+            font-size: 6rem;
+            color: var(--accent-gold);
+        }
+        
+        .team-info {
+            padding: 2rem;
+        }
+        
+        .team-name {
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .team-rank {
+            color: var(--accent-gold);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .team-contact {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--secondary-grey);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .contact-item i {
+            width: 30px;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+        }
+        
+        .contact-item a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .ceo-card {
+            grid-column: 1 / -1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .team-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .ceo-card {
+                grid-column: 1;
+            }
+            
+            .team-photo {
+                height: 280px;
+            }
+            
+            .team-info {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="logo">
+                               <h1>Blue-Peak Global Investment Limited</h1>
+
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html" class="active">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+          
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Hero -->
+    <section class="team-hero">
+        <h2>Our Leadership Team</h2>
+        <p>Meet the experts driving Blue Peak Global's success</p>
+    </section>
+
+    <!-- Team Introduction -->
+    <section class="team-intro">
+        <div class="container">
+            <h2 style="color: var(--primary-navy); margin-bottom: 1.5rem;">Excellence Through Leadership</h2>
+            <p>Our leadership team brings together decades of experience across multiple sectors. With expertise spanning mining, finance, engineering, and operations, our directors guide Blue Peak Global Investment Limited toward continued growth and success in the global marketplace.</p>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-grid">
+                <!-- CEO Card -->
+                <div class="team-card ceo-card">
+                    <div class="team-photo">
+                        <img src="images/team/ibrahim-kamilu.png" alt="Ibrahim Kamilu - CEO">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ibrahim Kamilu</h3>
+                        <span class="team-rank">Founder & CEO</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            As the visionary founder and CEO of Blue Peak Global Investment Limited, Ibrahim Kamilu leads the company's strategic direction and oversees all major operations across our diverse portfolio of services.
+                        </p>
+                        <div class="team-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:ceo@bluepeakglobal.com">kamiluibrahim111@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+2348035619489">+234 9077755821</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                 
+
+
+
+
+                <!-- Director 1 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/ismail-kamilu.jpeg" alt="Geol. Eng. Aminu Adamu - Director of Mining">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Engr. Ismail Kamilu</h3>
+                        <span class="team-rank">COO</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Leading our mineral resources division with extensive expertise in geological engineering and mining operations.
+                        </p>
+                        <div class="team-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="www.habibmuhd63@gmail.com">kamiluismail37@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+234 8100486722">+234 8144458654</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                     <!-- Director 1 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/Habib Usman Muhammad.jpeg" alt="Geol. Eng. Aminu Adamu - Director of Mining">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Habib Usman Muhammad</h3>
+                        <span class="team-rank">Managing Director</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Leading our mineral resources division with extensive expertise in geological engineering and mining operations.
+                        </p>
+                        <div class="team-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="www.habibmuhd63@gmail.com">habibmuhd63@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+234 8100486722">08033012058, 08158292442</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Director 1 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/aminu-adamu.jpg" alt="Geol. Eng. Aminu Adamu - Director of Mining">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Engr. Aminu Adamu</h3>
+                        <span class="team-rank">Director of Mining</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Leading our mineral resources division with extensive expertise in geological engineering and mining operations.
+                        </p>
+                        <div class="team-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:mining@bluepeakglobal.com">mayaufamilies@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+2348108446059">+234 8100486722</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- Director 1 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/Aminu Bichi.jpeg" alt="Geol. Eng. Aminu Adamu - Director of Mining">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Aminu G bichi</h3>
+                        <span class="team-rank">Secretary</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Leading our mineral resources division with extensive expertise in geological engineering and mining operations.
+                        </p>
+                    
+                    </div>
+                </div>
+
+
+
+                
+
+                
+                <!-- CFO -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/ibrahim-musa.jpeg" alt="Ibrahim Musa - Chief Financial Officer">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ibrahim Musa</h3>
+                        <span class="team-rank">Marketing Manager</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Ensuring financial excellence and regulatory compliance while driving sustainable growth and profitability.
+                        </p>
+                 
+                    </div>
+                </div>
+                  <!-- CFO -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/Murtala Bayero.jpeg" alt="Ibrahim Musa - Chief Financial Officer">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Murtala Bayero </h3>
+                        <span class="team-rank">Supervisor</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Ensuring financial excellence and regulatory compliance while driving sustainable growth and profitability.
+                        </p>
+                 
+                    </div>
+                </div>
+                  <!-- CFO -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/Sibawaihi Abdullahi.jpeg" alt="Ibrahim Musa - Chief Financial Officer">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sibawaihi Abdullahi </h3>
+                        <span class="team-rank">Chief Security</span>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                            Ensuring financial excellence and regulatory compliance while driving sustainable growth and profitability.
+                        </p>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" style="background: var(--primary-navy); color: var(--white); padding: 4rem 2rem; text-align: center;">
+        <div class="container">
+            <h2>Ready to Work With Our Team?</h2>
+            <p style="margin-bottom: 2rem;">Contact us today to discuss how we can help your business grow</p>
+            <a href="contact.html" class="cta-button large">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blue Peak Global Investment Limited</h3>
+                    <p>Powering progress through strategic global investments</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> No. S11 Alhamsad Tower, Zoo Road, Kano</p>
+                    <p><i class="fas fa-envelope"></i> bluepeakglobalinvestment@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +234 803 561 9489</p>
+                    <p><i class="fas fa-phone"></i> +234 810 844 6059</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blue Peak Global Investment Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-bubble" id="chatBubble">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>Blue Peak Assistant</h4>
+                <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">Hello! Welcome to Blue Peak Global. How can I assist you today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

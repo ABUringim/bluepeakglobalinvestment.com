@@ -1,0 +1,341 @@
+/* Enhanced Mobile Compatibility for Android, iOS, Tablets, Laptops & Desktops */
+
+/* Touch-friendly improvements */
+* {
+    -webkit-tap-highlight-color: rgba(212, 175, 55, 0.3);
+    -webkit-touch-callout: none;
+}
+
+/* Smooth scrolling for all devices */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Better font rendering on all devices */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Improved touch targets for mobile */
+a, button, .cta-button, .service-card, .gallery-item {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Mobile-specific header improvements */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.8rem 0;
+    }
+    
+    .logo h1 {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .mobile-menu-toggle {
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .nav-menu.active {
+        background: var(--primary-navy);
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .nav-menu ul {
+        padding: 0;
+    }
+    
+    .nav-menu li {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+/* Hero section mobile optimization */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .cta-button.large {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Gallery mobile improvements */
+@media (max-width: 768px) {
+    .photo-gallery {
+        padding: 1.5rem 0;
+    }
+    
+    .gallery-item {
+        width: 280px;
+        height: 210px;
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Service cards mobile optimization */
+@media (max-width: 768px) {
+    .services-overview {
+        padding: 3rem 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Contact form mobile optimization */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Footer mobile optimization */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+}
+
+/* Chat widget mobile optimization */
+@media (max-width: 768px) {
+    .chat-widget {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .chat-bubble {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .chat-bubble i {
+        font-size: 1.5rem;
+    }
+    
+    .chat-window {
+        width: calc(100vw - 20px);
+        height: 450px;
+        bottom: 70px;
+        right: -5px;
+    }
+}
+
+/* Lightbox mobile optimization */
+@media (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 85%;
+    }
+    
+    .lightbox-image {
+        max-height: 70vh;
+    }
+    
+    .lightbox-close {
+        top: -35px;
+        font-size: 2rem;
+    }
+    
+    .lightbox-nav {
+        font-size: 1.5rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    .lightbox-prev {
+        left: 5px;
+    }
+    
+    .lightbox-next {
+        right: 5px;
+    }
+    
+    .lightbox-caption {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Tablet optimization (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop optimization (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        max-width: 1100px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+/* Large desktop optimization (1441px+) */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero {
+        padding: 10rem 2rem;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero {
+        padding: 3rem 2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .chat-window {
+        height: 350px;
+    }
+}
+
+/* Android-specific fixes */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        padding-right: 30px;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .chat-window {
+        bottom: 80px;
+    }
+    
+    input, textarea, select {
+        font-size: 16px !important; /* Prevents zoom */
+    }
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Improve button touch feedback */
+button:active, .cta-button:active, a:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+/* Better image loading on mobile */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .service-card, .gallery-item, .feature-item {
+    transition: all 0.3s ease;
+}
+
+/* Accessibility improvements */
+:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .header, .footer, .chat-widget, .cta-button {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+}
